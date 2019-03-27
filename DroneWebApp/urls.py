@@ -21,8 +21,9 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home/', index, name='index'),
+    path('', index, name='index'),
     path('droneadmin/', droneadmin, name='droneadmin'),
+    path('admin-data/',admin_page_data,name = 'admin_page_data'),
 ] 
 
 if settings.DEBUG:

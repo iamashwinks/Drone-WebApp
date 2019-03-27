@@ -6,6 +6,8 @@ class VictimDetails(models.Model):
     longitude = models.FloatField(blank=True, null=True)
     phoneno = models.IntegerField()
     image = models.ImageField(upload_to='', blank=True, null=True)
+    published = models.DateTimeField(auto_now_add=True, editable=False, null=True, blank=False)
+
 
     def __str__(self):
         return self.name
