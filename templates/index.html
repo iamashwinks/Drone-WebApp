@@ -30,260 +30,266 @@
 						<div style="display:none;" id="myDiv" class="animate-bottom">
 							<nav class="navbar navbar-expand-lg navbar-container">
 								<div class="logo">
-									<img src="{% static 'img/drone-delivery.png' %}" style="width: 2rem;" alt="🚁 ">
-									<a class="navbar-brand" href="#"> Medrones</a>
+									<!-- <img src="{% static 'img/drone-delivery.png' %}" style="width: 2rem;" alt="🚁 "> -->
+									<svg id="icon-drone" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 510.604 510.604" style="enable-background:new 0 0 510.604 510.604;" xml:space="preserve" width="30" height="30">
+										<g>
+										<path d="M503.104,110.855h-63.066V94.099c0-4.142-3.358-7.5-7.5-7.5c-4.142,0-7.5,3.358-7.5,7.5v16.755h-63.065   c-4.142,0-7.5,3.358-7.5,7.5s3.358,7.5,7.5,7.5h63.065v16.45c-14.424,3.4-25.195,16.37-25.195,31.817v7.569H203.777   c-4.142,0-7.5,3.358-7.5,7.5c0,4.142,3.358,7.5,7.5,7.5h156.393l-7.811,30.002c-3.7,14.211-16.54,24.137-31.225,24.137h-35.836   c-4.142,0-7.5,3.358-7.5,7.5s3.358,7.5,7.5,7.5h18.27v23.457h-96.533v-23.457h48.263c4.142,0,7.5-3.358,7.5-7.5s-3.358-7.5-7.5-7.5   h-65.83c-14.685,0-27.525-9.925-31.225-24.137l-7.811-30.002h23.344c4.142,0,7.5-3.358,7.5-7.5c0-4.142-3.358-7.5-7.5-7.5h-63.017   v-7.569c0-15.447-10.771-28.417-25.195-31.817v-16.45h63.065c4.142,0,7.5-3.358,7.5-7.5s-3.358-7.5-7.5-7.5H85.565V94.099   c0-4.142-3.358-7.5-7.5-7.5c-4.142,0-7.5,3.358-7.5,7.5v16.755H7.5c-4.142,0-7.5,3.358-7.5,7.5s3.358,7.5,7.5,7.5h63.065v16.45   c-14.424,3.4-25.195,16.37-25.195,31.817v30.138c0,18.028,14.667,32.695,32.695,32.695s32.695-14.667,32.695-32.695v-7.569h24.173   l8.794,33.781c4.336,16.654,17.245,29.281,33.247,33.67l-7.011,4.591c-23.068,15.107-37.688,39.525-40.11,66.994l-7.064,80.118   c-0.364,4.126,2.687,7.766,6.813,8.13c0.224,0.02,0.446,0.029,0.668,0.029c3.844,0,7.118-2.94,7.462-6.842l7.064-80.118   c2.016-22.863,14.185-43.188,33.386-55.762l13.854-9.072v24.577c0,4.142,3.358,7.5,7.5,7.5h48.267v16.449h-22.165   c-10.854,0-19.683,8.83-19.683,19.683v29.659c0,10.853,8.829,19.683,19.683,19.683h61.051c10.854,0,19.683-8.83,19.683-19.683   v-29.659c0-10.853-8.83-19.683-19.683-19.683h-23.886v-16.449h48.267c4.142,0,7.5-3.358,7.5-7.5V272.21l13.854,9.072   c19.201,12.574,31.37,32.899,33.386,55.762l7.064,80.118c0.344,3.902,3.618,6.842,7.462,6.842c0.221,0,0.444-0.01,0.667-0.029   c4.126-0.364,7.176-4.004,6.813-8.13l-7.064-80.118c-2.422-27.468-17.042-51.887-40.11-66.994l-7.011-4.591   c16.003-4.388,28.911-17.015,33.247-33.67l8.795-33.781h24.172v7.569c0,18.028,14.667,32.695,32.695,32.695   c18.028,0,32.695-14.667,32.695-32.695v-30.138c0-15.447-10.771-28.417-25.195-31.817v-16.45h63.066c4.142,0,7.5-3.358,7.5-7.5   S507.246,110.855,503.104,110.855z M95.761,204.26c0,9.757-7.938,17.695-17.695,17.695c-9.757,0-17.695-7.938-17.695-17.695   v-30.138c0-9.757,7.938-17.695,17.695-17.695c9.757,0,17.695,7.938,17.695,17.695V204.26z M291.371,340.418v29.659   c0,2.582-2.101,4.683-4.683,4.683h-61.051c-2.583,0-4.683-2.101-4.683-4.683v-29.659c0-2.582,2.1-4.683,4.683-4.683h61.051   C289.27,335.735,291.371,337.836,291.371,340.418z M450.233,174.122v30.138c0,9.757-7.938,17.695-17.695,17.695   c-9.757,0-17.695-7.938-17.695-17.695v-30.138c0-9.757,7.938-17.695,17.695-17.695   C442.296,156.427,450.233,164.365,450.233,174.122z"></path>
+									<path d="M243.588,355.247c0,6.933,5.641,12.574,12.574,12.574c6.933,0,12.574-5.641,12.574-12.574s-5.641-12.574-12.574-12.574   C249.229,342.674,243.588,348.314,243.588,355.247z"></path>
+								</g>
+							</svg>
+							<a class="navbar-brand" href="#"> Medrones</a>
+						</div>
+						<button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav ml-auto nav-list">
+								<li class="nav-item active">
+									<a class="nav-link" href="#">🏠Home</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" data-toggle="modal" data-target="#exampleModal" href="">🎁Request Supply</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#how-it-works">⚙️How it Works</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#why-drones">💊Why Medical Drones</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#about-us">👨‍🏫About Us</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+					<div class="icon-bar">
+						<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+						<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+						<a href="#" class="google"><i class="fa fa-google"></i></a>
+						<a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+						<a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+					</div>
+					<div class="hero">
+						<div class="container paddding">
+							<div class="row padding">
+								<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+									<h1 class="display-3 hero-head">Request Emergency Help</h1>
+									<h5 class="hero-subhead">Request emergency help for self / friends / family.<br>Be a good samaritan and help a stranger in distress</h5>
+									<button type="button" class="btn btn-primary btn-lg hero-button" data-toggle="modal" data-target="#exampleModal">Request medical Supplies</button>
 								</div>
-								<button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-								<span class="navbar-toggler-icon"></span>
-								</button>
-								<div class="collapse navbar-collapse" id="navbarSupportedContent">
-									<ul class="navbar-nav ml-auto nav-list">
-										<li class="nav-item active">
-											<a class="nav-link" href="#">🏠Home</a>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link" data-toggle="modal" data-target="#exampleModal" style="cursor: pointer">🎁Request Supply</a>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link" href="#how-it-works">⚙️How it Works</a>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link" href="#why-drones">💊Why Medical Drones</a>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link" href="#about-us">👨‍🏫About Us</a>
-										</li>
-									</ul>
-								</div>
-							</nav>
-							<div class="icon-bar">
-								<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-								<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-								<a href="#" class="google"><i class="fa fa-google"></i></a>
-								<a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-								<a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
-							</div>
-							<div class="hero">
-								<div class="container paddding">
-									<div class="row padding">
-										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-											<h1 class="display-3 hero-head">Request Emergency Help</h1>
-											<h5 class="hero-subhead">Request emergency help for self / friends / family.<br>Be a good samaritan and help a stranger in distress</h5>
-											<button type="button" class="btn btn-primary btn-lg hero-button" data-toggle="modal" data-target="#exampleModal">Request medical Supplies</button>
-										</div>
-										<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-											<img class="img-fluid hero-img" src="{% static 'img/drone-delivery.gif' %}" alt="Drone Delivery">
-										</div>
-									</div>
-									<div class="row padding">
-										<div class="col-sm-12 col-md-6 col-lg-6"></div>
-										<div class="col-sm-12 col-md-1 col-lg-1">
-											<a href="#how-it-works">
-												<img class="img-fluid img_scroll" src="{% static 'img/circle.png' %}" alt="Scroll Button">
-											</a>
-										</div>
-										<div class="col-sm-12 col-md-5 col-lg-5"></div>
-									</div>
+								<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+									<img class="img-fluid hero-img" src="{% static 'img/drone-delivery.gif' %}" alt="Drone Delivery">
 								</div>
 							</div>
-							<!-- Modal -->
-							<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-								<div class="modal-dialog" role="document">
-									<div class="modal-content">
-										<div class="modal-header">
-											<h5 class="modal-title" id="exampleModalLabel">Your Details</h5>
-											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-											<span aria-hidden="true">&times;</span>
-											</button>
+							<div class="row padding">
+								<div class="col-sm-12 col-md-6 col-lg-6"></div>
+								<div class="col-sm-12 col-md-1 col-lg-1">
+									<a href="#how-it-works">
+										<img class="img-fluid img_scroll" src="{% static 'img/circle.png' %}" alt="Scroll Button">
+									</a>
+								</div>
+								<div class="col-sm-12 col-md-5 col-lg-5"></div>
+							</div>
+						</div>
+					</div>
+					<!-- Modal -->
+					<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel">Your Details</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<form method="POST" action="/home/" id="post-form" enctype="multipart/form-data">
+										{% csrf_token %}
+										<div class="form-group">
+											<button type="button" class="btn btn-primary btn-md" id="geolocation" value="" onclick="getLocation()" required>Use my location</button>
 										</div>
-										<div class="modal-body">
-											<form method="POST" action="/home/" id="post-form" enctype="multipart/form-data">
-												{% csrf_token %}
-												<div class="form-group">
-													<button type="button" class="btn btn-primary btn-md" id="geolocation" value="" onclick="getLocation()" required>Use my location</button>
-												</div>
-												<div class="form-group">
-													<input type="hidden" class="form-control" id="lat" name="lat">
-													<input type="hidden" class="form-control" id="long" name="long">
-												</div>
-												<!-- <p id="demo"></p> -->
-												<div class="form-group">
-													<label for="name" class="form-name">Name</label>
-													<input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
-													<small id="name" class="form-text text-muted">We'll never share your details with anyone else.</small>
-												</div>
-												<div class="form-group">
-													<label for="phone" class="form-phone">Phone No.</label>
-													<input type="tel" id="phone" name="phone" class="form-control" placeholder="Enter your phone number" required>
-												</div>
-												<div class="form-group">
-													<p>Upload Image(Optional)</p>
-													<input type="file" class="form-control-file" name="image">
-												</div>
-												<button type="submit" class="btn btn-primary" id="submit">Submit</button>
-											</form>
+										<div class="form-group">
+											<input type="hidden" class="form-control" id="lat" name="lat">
+											<input type="hidden" class="form-control" id="long" name="long">
 										</div>
-									</div>
+										<!-- <p id="demo"></p> -->
+										<div class="form-group">
+											<label for="name" class="form-name">Name</label>
+											<input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+											<small id="name" class="form-text text-muted">We'll never share your details with anyone else.</small>
+										</div>
+										<div class="form-group">
+											<label for="phone" class="form-phone">Phone No.</label>
+											<input type="tel" id="phone" name="phone" class="form-control" placeholder="Enter your phone number" required>
+										</div>
+										<div class="form-group">
+											<p>Upload Image(Optional)</p>
+											<input type="file" class="form-control-file" name="image">
+										</div>
+										<button type="submit" class="btn btn-primary" id="submit">Submit</button>
+									</form>
 								</div>
 							</div>
-							<div class="a-page" id="how-it-works">
-								<div class="container-fluid padding">
-									<div class="row">
-										<div class="col-12">
-											<div class="a-page-title">
-												<h1 class="display-4">How it works</h1>
-												<h5>Requesting first aid has never been this way.</h5>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="container">
-									<diimg-fluid v class="row padding">
-									<div class="col-sm-6 col-md-4">
-										<div class="work-div">
-											<img class="img-fluid a-page-img" src="{% static 'img/gps.png' %}" alt="Mobile GPS">
-											<p class="a-page-p">Upload your current GPS location</p>
-										</div>
-									</div><br>
-									<div class="col-sm-6 col-md-4">
-										<div class="work-div">
-											<img class="img-fluid a-page-img" src="{% static 'img/drone-delivery' %}.png" alt="Drone Delivery">
-											<p class="img-fluid a-page-p">Drone carries first aid to your location</p>
-										</div>
-									</div><br>
-									<div class="col-sm-6 col-md-4">
-										<div class="work-div">
-											<img class="img-fluid a-page-img img-3" src="{% static 'img/first-aid' %}-kit.png" alt="First Aid Kit">
-											<p class="a-page-p">Pick up your first aid kit</p>
-										</div>
-									</div><br>
-								</div>
-							</div>
-							<div class="b-page" id="why-drones">
-								<div class="container-fluid padding">
-									<div class="row">
-										<div class="col-12">
-											<div class="b-page-title">
-												<h1 class="display-4">Why should you care?</h1>
-												<h5>Emergency is big problem in India.</h5>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="container">
-									<div class="row">
-										<div class="col-sm-6 col-md-3">
-											<div class="b-page-asset">
-												<img class="img-fluid b-page-img" src="{% static 'img/cardiac.jpeg' %}" alt="Cardiac Arrest">
-											</div>
-										</div><br>
-										<div class="col-sm-6 col-md-3">
-											<div class="b-page-text">
-												<h4>1 Min</h4>
-												<p>1 life lost to Cardiac</p>
-											</div>
-										</div><br>
-										<div class="col-sm-6 col-md-3">
-											<div class="b-page-asset">
-												<img class="img-fluid b-page-img" src="{% static 'img/car.jpg' %}" alt="Car Accident">
-											</div>
-										</div><br>
-										<div class="col-sm-6 col-md-3">
-											<div class="b-page-text">
-												<h4>4 Min</h4>
-												<p>1 life lost - Accident</p>
-											</div>
-										</div><br>
+						</div>
+					</div>
+					<div class="a-page" id="how-it-works">
+						<div class="container-fluid padding">
+							<div class="row">
+								<div class="col-12">
+									<div class="a-page-title">
+										<h1 class="display-4">How it works</h1>
+										<h5>Requesting first aid has never been this way.</h5>
 									</div>
 								</div>
 							</div>
-							<div class="c-page" id="about-us">
-								<div class="container-fluid padding">
-									<div class="row">
-										<div class="col-12">
-											<div class="c-page-title">
-												<h1 class="display-3">Our mission is to improve survivability.</h1>
-												<h5>Our Team</h5>
-											</div>
-										</div>
-									</div>
+						</div>
+						<div class="container">
+							<diimg-fluid v class="row padding">
+							<div class="col-sm-6 col-md-4">
+								<div class="work-div">
+									<img class="img-fluid a-page-img" src="{% static 'img/gps.png' %}" alt="Mobile GPS">
+									<p class="a-page-p">Upload your current GPS location</p>
 								</div>
-								<div class="container">
-									<div class="row padding">
-										<div class="col-sm-6 col-md-3">
-											<div class="c-page-team">
-												<img class="img-fluid c-page-img" src="{% static 'img/man.png' %}" alt="Man"><br>
-												<h3 class="c-page-member">Team Member</h3>
-											</div>
-										</div>
-										<div class="col-sm-6 col-md-3">
-											<div class="c-page-team">
-												<img class="img-fluid c-page-img" src="{% static 'img/man.png' %}" alt="Man"><br>
-												<h3 class="c-page-member">Team Member</h3>
-											</div>
-										</div>
-										<div class="col-sm-6 col-md-3">
-											<div class="c-page-team">
-												<img class="img-fluid c-page-img" src="{% static 'img/man.png' %}" alt="Man"><br>
-												<h3 class="c-page-member">Team Member</h3>
-											</div>
-										</div>
-										<div class="col-sm-6 col-md-3">
-											<div class="c-page-team">
-												<img class="img-fluid c-page-img" src="{% static 'img/man.png' %}" alt="Man"><br>
-												<h3 class="c-page-member">Team Member</h3>
-											</div>
-										</div>
+							</div><br>
+							<div class="col-sm-6 col-md-4">
+								<div class="work-div">
+									<img class="img-fluid a-page-img" src="{% static 'img/drone-delivery' %}.png" alt="Drone Delivery">
+									<p class="img-fluid a-page-p">Drone carries first aid to your location</p>
+								</div>
+							</div><br>
+							<div class="col-sm-6 col-md-4">
+								<div class="work-div">
+									<img class="img-fluid a-page-img img-3" src="{% static 'img/first-aid' %}-kit.png" alt="First Aid Kit">
+									<p class="a-page-p">Pick up your first aid kit</p>
+								</div>
+							</div><br>
+						</div>
+					</div>
+					<div class="b-page" id="why-drones">
+						<div class="container-fluid padding">
+							<div class="row">
+								<div class="col-12">
+									<div class="b-page-title">
+										<h1 class="display-4">Why should you care?</h1>
+										<h5>Emergency is big problem in India.</h5>
 									</div>
 								</div>
 							</div>
-							<!-- Footer -->
-							<footer class="footer">
-								<div class="container">
-									<div class="row">
-										<div class="col-lg-3"></div>
-										<div class="col-lg-4">
-											<p class="footer-text">Email:<br>our-email@gmail.com</p>
-										</div><br>
-										<div class="col-lg-4">
-											<p class="footer-text">Call Us:<br>
-												+91 **********<br>
-												+91 **********
-											</p>
-										</div><br>
-										<div class="col-lg-1"></div>
+						</div>
+						<div class="container">
+							<div class="row">
+								<div class="col-sm-6 col-md-3">
+									<div class="b-page-asset">
+										<img class="img-fluid b-page-img" src="{% static 'img/cardiac.jpeg' %}" alt="Cardiac Arrest">
 									</div>
 								</div><br>
-							</footer>
+								<div class="col-sm-6 col-md-3">
+									<div class="b-page-text">
+										<h4>1 Min</h4>
+										<p>1 life lost to Cardiac</p>
+									</div>
+								</div><br>
+								<div class="col-sm-6 col-md-3">
+									<div class="b-page-asset">
+										<img class="img-fluid b-page-img" src="{% static 'img/car.jpg' %}" alt="Car Accident">
+									</div>
+								</div><br>
+								<div class="col-sm-6 col-md-3">
+									<div class="b-page-text">
+										<h4>4 Min</h4>
+										<p>1 life lost - Accident</p>
+									</div>
+								</div><br>
+							</div>
 						</div>
-						<script>
-							var lat = document.getElementById("lat");
-							var long = document.getElementById("long");
-							function getLocation() {
-							if (navigator.geolocation) {
-							navigator.geolocation.watchPosition(showPosition);
-							} else {
-							lat.innerHTML = "Geolocation is not supported by this browser.";
-							}
-							}
-							function showPosition(position) {
-							lat.value= position.coords.latitude;
-							long.value= position.coords.longitude;
-							}
-						</script>
-						<script>
-							var myVar;
-							function myFunction() {
-							myVar = setTimeout(showPage, 2000);
-							}
-							function showPage() {
-							document.getElementById("loader").style.display = "none";
-							document.getElementById("myDiv").style.display = "block";
-							}
-						</script>
-						<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-						<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-						<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-						<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-					</body>
-				</html>
+					</div>
+					<div class="c-page" id="about-us">
+						<div class="container-fluid padding">
+							<div class="row">
+								<div class="col-12">
+									<div class="c-page-title">
+										<h1 class="display-3">Our mission is to improve survivability.</h1>
+										<h5>Our Team</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="container">
+							<div class="row padding">
+								<div class="col-sm-6 col-md-3">
+									<div class="c-page-team">
+										<img class="img-fluid c-page-img" src="{% static 'img/man.png' %}" alt="Man"><br>
+										<h3 class="c-page-member">Team Member</h3>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-3">
+									<div class="c-page-team">
+										<img class="img-fluid c-page-img" src="{% static 'img/man.png' %}" alt="Man"><br>
+										<h3 class="c-page-member">Team Member</h3>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-3">
+									<div class="c-page-team">
+										<img class="img-fluid c-page-img" src="{% static 'img/man.png' %}" alt="Man"><br>
+										<h3 class="c-page-member">Team Member</h3>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-3">
+									<div class="c-page-team">
+										<img class="img-fluid c-page-img" src="{% static 'img/man.png' %}" alt="Man"><br>
+										<h3 class="c-page-member">Team Member</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Footer -->
+					<footer class="footer">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-3"></div>
+								<div class="col-lg-4">
+									<p class="footer-text">Email:<br>our-email@gmail.com</p>
+								</div><br>
+								<div class="col-lg-4">
+									<p class="footer-text">Call Us:<br>
+										+91 **********<br>
+										+91 **********
+									</p>
+								</div><br>
+								<div class="col-lg-1"></div>
+							</div>
+						</div><br>
+					</footer>
+				</div>
+				<script>
+					var lat = document.getElementById("lat");
+					var long = document.getElementById("long");
+					function getLocation() {
+					if (navigator.geolocation) {
+					navigator.geolocation.watchPosition(showPosition);
+					} else {
+					lat.innerHTML = "Geolocation is not supported by this browser.";
+					}
+					}
+					function showPosition(position) {
+					lat.value= position.coords.latitude;
+					long.value= position.coords.longitude;
+					}
+				</script>
+				<script>
+					var myVar;
+					function myFunction() {
+					myVar = setTimeout(showPage, 2000);
+					}
+					function showPage() {
+					document.getElementById("loader").style.display = "none";
+					document.getElementById("myDiv").style.display = "block";
+					}
+				</script>
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+				<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+				<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+			</body>
+		</html>
