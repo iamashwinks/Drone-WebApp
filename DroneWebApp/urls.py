@@ -23,7 +23,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name='index'),
     path('droneadmin/', droneadmin, name='droneadmin'),
-    path('admin-data/',admin_page_data,name = 'admin_page_data'),
+    path('admin-data/',admin_page_data, name = 'admin_page_data'),
+    path('droneadmin/details/<int:details_id>',droneadmin_details, name = 'droneadmin_details'),
 ] 
 
 if settings.DEBUG:

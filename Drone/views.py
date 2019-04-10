@@ -27,6 +27,7 @@ def admin_page_data(request):
 	data = serializers.serialize('json', dronedetails)
 	resJson=[]
 	for data in dronedetails:
+		data_id = data.id
 		name = data.name
 		latitude = data.latitude
 		longitude = data.longitude
@@ -36,6 +37,11 @@ def admin_page_data(request):
 		else:
 			image = str('/static/img/accident1.jpg')
 		
-		resJson.append([name,latitude,longitude,phoneno,image])
+		resJson.append([name,latitude,longitude,phoneno,image, data_id])
 
 	return JsonResponse(resJson, safe=False)
+
+def droneadmin_details(request, details_id):
+	detailview = VictimDetails.objects.get(pk=details_id)
+
+	return render(request, "victim_details.html", {"detailview":detailview})
