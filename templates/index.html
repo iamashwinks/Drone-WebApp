@@ -63,11 +63,11 @@
 		</div>
 	</nav>
 	<!-- <div class="icon-bar">
-			<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-			<a href="#" class="google"><i class="fa fa-google"></i></a>
-			<a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-			<a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+								<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+								<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+								<a href="#" class="google"><i class="fa fa-google"></i></a>
+								<a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+								<a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
 	</div> -->
 	<div class="hero">
 		<div class="container paddding">
@@ -234,87 +234,95 @@
 		</div>
 		<div class="container">
 			<div class="row padding">
-				<div class="col-sm-6 col-md">
+				<div class="col-sm-6 col-md-3">
 					<div class="c-page-team">
 						<img class="img-fluid c-page-img" src="{% static 'img/Achyuth.jpg' %}" alt="Achyuth K V"><br>
 						<h3 class="c-page-member">Achyuth K V</h3>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md">
+				<div class="col-sm-6 col-md-3">
 					<div class="c-page-team">
 						<img class="img-fluid c-page-img" src="{% static 'img/Ashwin.jpg' %}" alt="Ashwin K S"><br>
 						<h3 class="c-page-member">Ashwin K S</h3>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md">
+				<div class="col-sm-6 col-md-3">
 					<div class="c-page-team">
 						<img class="img-fluid c-page-img" src="{% static 'img/Gagandeep.jpg' %}" alt="Gagandeep H"><br>
 						<h3 class="c-page-member">Gagandeep H</h3>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md">
+				<div class="col-sm-6 col-md-3">
 					<div class="c-page-team">
 						<img class="img-fluid c-page-img" src="{% static 'img/Harshitha.jpg' %}" alt="Harshitha A I"><br>
 						<h3 class="c-page-member">Harshitha A I</h3>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md">
+			</div>
+			<div class="row padding">
+				<div class="col-md-3"></div>
+				<div class="col-sm-6 col-md-3">
 					<div class="c-page-team">
 						<img class="img-fluid c-page-img" src="{% static 'img/grc1.jpg' %}" alt="GoRadioControl"><br>
-						<h3 class="c-page-member">In Assoc. with GoRadioControl</h3>
+						<h3 class="c-page-member">In Association with<br>GoRadioControl</h3>
 					</div>
 				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="c-page-team">
+						<img class="img-fluid c-page-img" src="{% static 'img/Anitha.jpg' %}" alt="GoRadioControl"><br>
+						<h3 class="c-page-member">Project Guide<br>Anitha Ma'am</h3>
+					</div>
+				</div>
+				<div class="col-md-3"></div>
 			</div>
 		</div>
-	</div>
-	<!-- Footer -->
-	<footer class="footer">
-		<div class="container">
-			<!-- <div class="row">
-				<div class="col-lg-3"></div>
-				<div class="col-lg-4">
-					<p class="footer-text">Email:<br>our-email@gmail.com</p>
-				</div><br>
-				<div class="col-lg-4">
-					<p class="footer-text">Call Us:<br>
-						+91 **********<br>
-						+91 **********
-					</p>
-				</div><br>
-				<div class="col-lg-1"></div>
-			</div> -->
-			<p style="float: right; font-size: 14px; color: #ccc;">&copy; All Rights Reserved.</p><br>
-		</div><br>
-	</footer>
-</div>
-<script>
-	var lat = document.getElementById("lat");
-	var long = document.getElementById("long");
-	function getLocation() {
-	if (navigator.geolocation) {
-	navigator.geolocation.watchPosition(showPosition);
-	} else {
-	lat.innerHTML = "Geolocation is not supported by this browser.";
-	}
-	}
-	function showPosition(position) {
-	lat.value= position.coords.latitude;
-	long.value= position.coords.longitude;
-	}
-</script>
-<script>
-	var myVar;
-	function myFunction() {
-	myVar = setTimeout(showPage, 2000);
-	}
-	function showPage() {
-	document.getElementById("loader").style.display = "none";
-	document.getElementById("myDiv").style.display = "block";
-	}
-</script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="container">
+				<!-- <div class="row">
+					<div class="col-lg-3"></div>
+					<div class="col-lg-4">
+						<p class="footer-text">Email:<br>our-email@gmail.com</p>
+					</div><br>
+					<div class="col-lg-4">
+						<p class="footer-text">Call Us:<br>
+							+91 **********<br>
+							+91 **********
+						</p>
+					</div><br>
+					<div class="col-lg-1"></div>
+				</div> -->
+				<p style="float: right; font-size: 14px; color: #ccc;">&copy; All Rights Reserved.</p><br>
+			</div><br>
+		</footer>
+		<script>
+			var lat = document.getElementById("lat");
+			var long = document.getElementById("long");
+			function getLocation() {
+			if (navigator.geolocation) {
+			navigator.geolocation.watchPosition(showPosition);
+			} else {
+			lat.innerHTML = "Geolocation is not supported by this browser.";
+			}
+			}
+			function showPosition(position) {
+			lat.value= position.coords.latitude;
+			long.value= position.coords.longitude;
+			}
+		</script>
+		<script>
+			var myVar;
+			function myFunction() {
+			myVar = setTimeout(showPage, 2000);
+			}
+			function showPage() {
+			document.getElementById("loader").style.display = "none";
+			document.getElementById("myDiv").style.display = "block";
+			}
+		</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	</body>
 </html>

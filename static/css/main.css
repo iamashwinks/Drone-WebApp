@@ -125,7 +125,7 @@ html, body {
 	transform: translate(-50%, -50%);
 }
 
-.a-page, .b-page  {
+.a-page  {
 	width: 100%;
 	height: 100vh;
 }
@@ -140,13 +140,8 @@ html, body {
 	text-align: center;
 }
 
-.a-page-title, .b-page-title {
+.a-page-title {
 	margin-bottom: 2rem;
-}
-
-.b-page-title {
-	margin-top: 2rem;
-	margin-bottom: 5rem;
 }
 
 .a-page-title > h1, .c-page-title > h1 {
@@ -236,7 +231,7 @@ html, body {
 .c-page-member {
 	font-size: 140%;
 	text-align: center;
-	margin-top: -2rem;
+	margin-top: -3rem;
 	padding-bottom: 2rem;
 }
 

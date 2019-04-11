@@ -1,5 +1,4 @@
 """DroneWebApp URL Configuration
-
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.1/topics/http/urls/
 Examples:
@@ -24,7 +23,9 @@ urlpatterns = [
     path('', index, name='index'),
     path('droneadmin/', droneadmin, name='droneadmin'),
     path('admin-data/',admin_page_data, name = 'admin_page_data'),
-    path('droneadmin/details/<int:details_id>',droneadmin_details, name = 'droneadmin_details'),
+    path('droneadmin/details/<int:details_id>',victim_page, name = 'victim_page'),
+    path('droneadmin/victim-details/<int:details_id>',victim_details, name = 'victim_details'),
+
 ] 
 
 if settings.DEBUG:
