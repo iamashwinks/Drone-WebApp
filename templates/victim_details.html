@@ -56,7 +56,7 @@
 						table_data += '<p>📌 &nbsp'+parseFloat(data[0]['longitude']).toFixed(4)+'</p>';
 						table_data += '<p>📞 &nbsp'+ data[0]['phoneno'] +'</p>';
 									
-						table_data += '<a href="#" onclick="redirectFunction(' + data[0]['latitude'] +','+data[0]['longitude']+')">Locate</a>';
+						table_data += '<a href="#" target="_blank" onclick="redirectFunction(' + data[0]['latitude'] +','+data[0]['longitude']+')">Locate</a>';
 					table_data += '</div>';
 				table_data += '</div>';
 			table_data += '</div>';
