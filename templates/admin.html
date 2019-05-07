@@ -17,6 +17,10 @@
             <a class="navbar-brand logo" href="#" style=" color: #192a56;">⚙️ Admin</a>
             <a class="navbar-brand logo ml-auto" href="index.html" target="_blank" style="margin-right: 50px; margin-top: 10px;  color: #fff;">Medrones</a>
         </nav>
+        <a class="weatherwidget-io" href="https://forecast7.com/en/12d9777d59/bengaluru/" data-label_1="BENGALURU" data-label_2="WEATHER" data-theme="original" data-basecolor="#0D2A53" >BENGALURU WEATHER</a>
+        <script>
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+        </script>
         <div class="row" style="width: 100%;height: 100%;">
             <div class="col-md-3 admin-illustration">
                 <img class="admin-illustration-img" src="{% static 'img/notes.svg' %}">
@@ -46,18 +50,15 @@
         for(var count = 0; count<data.length; count=count+1)
         {
         
-        table_data += '<div class="col-md-3 container">';
-            table_data += '<div class="box">';
-                table_data += '<div class = "content" >';
-                    // table_data += '<img src="'+data[count][0]+'" style="height: 75%;padding-top:10px"onclick="redirectFunction(\'' + data[count][3] + '\')">';
-                    table_data += '<h2>'+(count+1)+'</h2>';
-                    table_data += '<h3>👨‍&nbsp'+data[count][0]+'</h3>';
-                    table_data += '<p>📌 &nbsp'+parseFloat(data[count][1]).toFixed(4)+'</p>';
-                    table_data += '<p>📌 &nbsp'+parseFloat(data[count][2]).toFixed(4)+'</p>';
-                    table_data += '<p>📞 &nbsp'+ data[count][3] +'</p>';
-                    table_data += '<a href="#" onclick="redirectFunction(' + data[count][5] + ')"> Read More</a>';
-                    
-                table_data += '</div>';
+        table_data += '<div class="box">';
+            table_data += '<div class = "content" >';
+                table_data += '<h2>'+(count+1)+'</h2>';
+                table_data += '<h3>'+data[count][0]+'</h3>';
+                table_data += '<p>📌 &nbsp'+parseFloat(data[count][1]).toFixed(4)+'</p>';
+                table_data += '<p>📌 &nbsp'+parseFloat(data[count][2]).toFixed(4)+'</p>';
+                table_data += '<p>📞 &nbsp'+ data[count][3] +'</p>';
+                table_data += '<a href="#" onclick="redirectFunction(' + data[count][5] + ')"> Assist</a>';
+                
             table_data += '</div>';
         table_data += '</div>';
         

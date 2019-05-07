@@ -368,6 +368,31 @@ label:after {
     transform-origin: 50% 50%;
 }
 
+.waiting-page-hero {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: #f9f9f9;
+	width: 100%;
+	height: 100vh;
+}
+
+.waiting-page-head {
+	font-weight: 600;
+	font-size: 200%;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.5;
+	margin-top: -8rem;
+}
+
+.waiting-page-img {
+	max-width: 100%;
+	width: 60%;
+}
+
+
 @-webkit-keyframes drone {
     0% {
         -webkit-transform: translate(0px, 0px);
@@ -669,4 +694,17 @@ label:after {
 	    margin-top: 1rem;
 	    margin-left: 0;
 	}
+
+	.waiting-page-head {
+		font-size: 120%;
+		line-height: 1.5;
+		margin-top: -10rem;
+	}
+
+	.waiting-page-img {
+		max-width: 100%;
+		width: 80%;
+	}
+
 }
+

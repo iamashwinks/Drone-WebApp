@@ -69,9 +69,10 @@ body {
 .container .box {
 	position: relative;
 	width: 210px;
-	height: 350px;
+	height: 250px;
 	background-color: #011f4b;
-	display: flex;
+	display: grid;
+	grid-auto-columns: auto auto auto auto; 
 	align-items: center;
 	justify-content: center;
 	border: 1px solid #000;
@@ -118,22 +119,23 @@ body {
 	position: absolute;
 	margin: 0;
 	padding: 0;
-	top: -60px;
-	right: 20px;
-	font-size: 10em;
+	top: -20px;
+	right: 0px;
+	font-size: 8em;
+	font-weight: 700;
 	color: #fff;
 	opacity: 0.05;
 	transition: 0.5s;
 }
 
 .box:hover .content h2 {
-	top: -120px;
+	top: -50px;
 }
 
 .box .content h3 {
 	margin: 0 0 10px;
 	padding: 0;
-	font-size: 29px;
+	font-size: 150%;
 	font-weight: 600;
 	color: #fff;
 }
@@ -141,14 +143,14 @@ body {
 .box .content p {
 	margin: 0;
 	padding: 0;
-	font-size: 16px;
+	font-size: 95%;
 	color: #fff;
 }
 
 .box .content a {
 	position: relative;
-	margin: 20px 0 0;
-	padding: 10px 20px;
+	margin: 10px 0 0;
+	padding: 8px 15px;
 	color: #fff;
 	/*border: 1px solid #fff;*/
 	box-shadow: 0 20px 50px rgba(0,0,0,1);
@@ -183,3 +185,4 @@ body {
 	background-color: #fff;
 	color: #060c21;
 }
+

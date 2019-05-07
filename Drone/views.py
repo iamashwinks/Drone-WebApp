@@ -6,17 +6,20 @@ from django.http import JsonResponse
 import requests
 
 def index(request):
-	if request.method == 'POST':
-		name = request.POST.get('name')
-		latitude = request.POST.get('lat')
-		longitude = request.POST.get('long')
-		phoneno = request.POST.get('phone')
-		image = request.FILES.get('image')
-		# print(name, latitude, longitude, phoneno, image)
-		details = VictimDetails(name = name, phoneno = phoneno, latitude= latitude, longitude = longitude, image = image)
-		details.save()
-		return redirect('/')
+	try:
+		if request.method == 'POST':
+			name = request.POST.get('name')
+			latitude = request.POST.get('lat')
+			longitude = request.POST.get('long')
+			phoneno = request.POST.get('phone')
+			image = request.FILES.get('image')
+			# print(name, latitude, longitude, phoneno, image)
+			details = VictimDetails(name = name, phoneno = phoneno, latitude= latitude, longitude = longitude, image = image)
+			details.save()
+			return render(request, "waiting.html")
 
+	except:
+		return render(request, "index.html")
 	return render(request, "index.html")
 
 def droneadmin(request):
@@ -74,4 +77,3 @@ def victim_details(request, details_id):
 	resJson.append({'id':data_id,'name':name,'latitude':latitude,'longitude':longitude,'phoneno':phoneno,'image':image,'label':label })
 
 	return JsonResponse(resJson, safe=False)
-
