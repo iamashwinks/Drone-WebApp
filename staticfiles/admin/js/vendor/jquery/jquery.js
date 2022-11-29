@@ -691,7 +691,7 @@ try {
 	);
 	// Support: Android<4.0
 	// Detect silently failing push.apply
-	arr[ preferredDoc.childNodes.length ].nodeType;
+	
 } catch ( e ) {
 	push = { apply: arr.length ?
 
@@ -2018,7 +2018,7 @@ Expr = Sizzle.selectors = {
 			// Accessing this property makes selected-by-default
 			// options in Safari work properly
 			if ( elem.parentNode ) {
-				elem.parentNode.selectedIndex;
+				
 			}
 
 			return elem.selected === true;
@@ -7741,7 +7741,7 @@ if ( !support.optSelected ) {
 
 			var parent = elem.parentNode;
 			if ( parent && parent.parentNode ) {
-				parent.parentNode.selectedIndex;
+				
 			}
 			return null;
 		},
@@ -7751,10 +7751,10 @@ if ( !support.optSelected ) {
 
 			var parent = elem.parentNode;
 			if ( parent ) {
-				parent.selectedIndex;
+				
 
 				if ( parent.parentNode ) {
-					parent.parentNode.selectedIndex;
+					
 				}
 			}
 		}
